@@ -1,0 +1,65 @@
+@import "color";
+
+.footer{
+    margin-top: 3rem;
+    min-height: 25vh;
+    background-color: $dark;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 2.5rem;
+
+    >div{
+        color: white;
+
+
+        >h2{
+            font-size: 2rem;
+            color: $red
+        }
+
+        >p{
+            margin: 2rem 0;
+            letter-spacing: 2px;
+            font-size: 1.1rem;
+        }
+
+        >strong{
+            letter-spacing: 1.5px;
+        }
+    }
+
+    >aside{
+        padding: 0.6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        >h3{
+            color: white;
+        }
+
+        >svg{
+            margin: 0.5rem;
+            font-size: 1.9rem;
+            color: $red;
+
+            &:hover{
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+
+        >aside{
+            margin-top: 1rem;
+        }
+    }
+}

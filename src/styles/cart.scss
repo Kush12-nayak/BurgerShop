@@ -1,0 +1,208 @@
+@import "color";
+
+
+.cart{
+    height: 100vh;
+    width: 100%;
+    background-color: $pink;
+
+    
+    >main{
+        overflow-y: auto;
+        padding: 1rem;
+        margin: auto;
+        height: 45vh;
+        background-color: white;
+        width: 70%;
+
+        &::-webkit-scrollbar{
+            display: none;
+            scrollbar-width: none;
+        }
+
+        >.cartitem{
+            margin-top: 20px;
+            border-radius: 5px;
+            height: 10vh;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgba(128, 128, 128, 0.213);
+
+            >article{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                >.foodname{
+                    min-width: 13rem;
+                    padding: 1rem 1rem;
+                    font-size: 1.2rem;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+
+                >P{
+                    padding: 1rem 1rem;
+                    font-size: 1.2rem;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                }
+                
+                >img{
+                    height:100px;
+                    width: 100px;
+                    object-fit: contain;
+                    padding: 1rem 0;
+                }  
+            }
+
+            >div{
+                display: flex;
+
+                >button{
+                    margin: auto;
+                    height: 35px;
+                    padding: 0.5rem;
+                    color: white;
+                    background-color: black;
+                    text-align: center;
+                    border-radius: 5px;
+                }
+
+                >p{
+                    margin: auto;
+                    padding: 0.5rem;
+                }
+            }
+
+            >svg{
+               margin-top: 1.2rem; 
+                font-size: 25px;
+              
+            }
+        }
+    }
+
+    >aside{
+        padding: 1rem;
+        margin: auto;
+        height: 32vh;
+        background-color: white;
+        width: 70%;
+        text-align: center;
+
+        >div{
+            >div{
+                margin: 0.5rem 1rem;
+                padding: 0.5rem;
+                text-align: center;
+                display: flex;
+                justify-content: space-between;
+    
+                >p{
+                    font-size: 1.3rem;
+                }
+            } 
+        }
+    
+        
+    }
+    >a{
+        margin: auto;
+        width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $red;
+        color: white;
+        padding: 0.7rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }  
+
+    
+}
+
+@media screen and (max-width:600px){
+
+    .cart{
+
+        >main{
+            padding: 0.2rem;
+            width: 100%;
+            height: 50vh;
+        
+
+        >.cartitem{
+            margin-top: 10px;
+    
+            >article{
+
+                .foodname{
+                    min-width: 8rem;
+                }
+    
+                >p{
+                    padding: 0.4rem 0.4rem;
+                    font-size: 1.2rem;
+                }
+                
+                >img{
+                    height:60px;
+                    width: 60px;
+                    padding: 0.4rem 0;
+                } 
+            }
+    
+            >div{
+    
+                >button{
+                    height: 25px;
+                    padding: 0.3rem;
+                }
+    
+                >p{
+                    
+                    margin: auto;
+                    padding: 0.5rem;
+                }
+            }
+
+            >svg{
+                font-size: 1rem;
+            }
+
+            >svg{
+                margin:auto ;
+                font-size: 25px;
+               
+             }
+        }
+    }
+
+    >aside{
+        width: 100%;
+    
+        >div{
+           
+            padding: 0.5rem;
+            text-align: center;
+            display: block;
+            justify-content: space-evenly;
+
+            >p{
+                font-size: 1.3rem;
+            }
+        } 
+    }
+    >a{
+        width: 50%;    
+        background-color: $red;
+        color: white;
+        padding: 0.8rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }  
+
+}  
+    
+}

@@ -1,0 +1,83 @@
+@import "color";
+
+
+.orderdetails{
+    background-color: $pink;
+    width: 100%;
+
+    >main{
+        width: 60%;
+        margin: auto;
+        padding: 2rem;
+        background-color: white;
+        overflow-x: auto;
+
+        >h1{
+            color: $red;
+            text-transform: uppercase;
+            text-align: center;
+            font: 100 2rem "Roboto";
+        }
+
+        >div{
+            margin: 2rem 0;
+            text-align: center;
+
+            >h1{
+                font: 300 1.5rem ;
+                letter-spacing: 3px;
+                margin: auto;
+                border-bottom: 2px solid $red;
+                width: fit-content;
+            }
+
+            >h1{
+                margin-bottom: 2rem;
+            }
+
+            >p{
+                border-radius: 5px;
+                padding: 0.8rem;
+                background-color:whitesmoke ;
+                white-space: nowrap;
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.1rem;
+                letter-spacing: 3px;
+                margin: 0.5rem;
+                
+            }
+        }
+
+        >article{
+
+            >h1{
+                text-transform: uppercase;
+                color:$red;
+                letter-spacing: 1.2px;
+                margin: 1rem;
+            }
+
+            >div{
+                font: 1.1rem;
+                border-radius: 5px;
+                padding: 1.1rem;
+                background-color: rgb(225, 217, 217);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .orderdetails{
+
+        >main{
+            width: 100%;
+        }
+    }
+    
+}

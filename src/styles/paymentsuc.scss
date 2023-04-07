@@ -1,0 +1,60 @@
+@import "color";
+
+.paymentsuccess{
+    background-color: $pink;
+    width: 100%;
+    height: 60vh;
+
+    >main{
+        height: 100%;
+        background-color: white;
+        width: 60%;
+        margin: auto;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >h1{
+            color: $red;
+            margin: 1rem;
+            text-align: center;
+            text-transform: uppercase;
+            font: 100 3rem "Roboto";
+        }
+
+        >p{
+            font-size: 1.1rem;
+            margin: 1rem;
+        }
+
+        >a{
+            background-color: $red;
+            color: white;
+            margin: 2rem;
+            padding: 1rem;
+            font-size: 1.1rem;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .paymentsuccess{
+
+        >main{
+
+            width: 100%;
+
+            >p{
+                letter-spacing: 1.1px;
+                margin: 0.5rem;
+            }
+
+        }
+    }
+    
+}

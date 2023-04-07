@@ -1,0 +1,67 @@
+@import "color";
+
+nav{
+    height: 5rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.29);
+
+    >div{
+        display: flex;
+        align-items: center;
+      
+        >svg{
+            color: $red;
+            font-size: 2.5rem;
+        }
+
+        >a{
+            margin: 0 2rem;
+            color: $dark;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+
+            &:hover{
+                color: $red;
+            }
+
+            >.alert{
+               color: lightgreen;
+                 margin-left: -9px;
+                 margin-bottom: -9px;
+                 transition: color 0.2s;
+
+                
+                 &:hover{
+                     color: rgb(198, 52, 74);
+                 }
+            }
+
+            >svg{
+                color: $red;
+                font-size: 1.4rem;
+                transition: inherit;
+
+                &:hover{
+                    color: $dark;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    
+    nav{
+        padding: 1rem;
+
+        >div{
+            >a{
+                margin: 0 0.4rem;
+            }
+        }
+    }
+}

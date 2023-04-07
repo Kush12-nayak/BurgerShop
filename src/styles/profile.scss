@@ -1,0 +1,81 @@
+@import "color";
+
+.profile{
+    height: 85vh;
+    width: 100%;
+    background-color: $pink;
+
+    >main{
+        height: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        margin: auto;
+
+        >img{
+            margin-top: 10px;
+            height: 11rem;
+            width: 11rem;
+            border-radius: 100%;
+        }
+
+        >h5{
+            margin: 1rem;
+            font-size: 1.2rem;
+        }
+
+        >div{
+            margin: 1.2rem;
+
+            >a{
+                display: flex;
+                align-items: center;
+                color:white;
+                border-radius: 5px;
+                background-color: $red;
+                padding: 1rem;
+
+                >svg{
+                    margin-right:1.1rem ;
+                    font-size: 1.5rem;
+                    color: black;
+                }
+            }
+
+            >button{
+                padding: 1rem;
+                background-color: $dark;
+                color: white;
+                border-radius: 10px;
+                border: none;
+
+                >svg{
+                    font-size: 1.2rem;
+                    margin-right: 1.1rem;
+                    color: $red;
+                }
+            }
+        }
+
+        .order{
+            margin: 1.2rem;
+
+            >a{
+                display: flex;
+                align-items: center;
+                color:white;
+                border-radius: 5px;
+                background-color: rgb(67, 159, 67);
+                padding: 0.8rem;
+
+                >svg{
+                    margin-right:1.1rem ;
+                    font-size: 1.9rem;
+                    color: rgb(23, 23, 144)
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,136 @@
+@import "color";
+
+
+#menu{
+    min-height: 100vh;
+    max-width: 100%;
+
+    >h1{
+        text-align: center;
+        margin: 1.5rem;
+        padding: 1.5rem;
+        font-size: 3rem;
+    }
+
+    >.btn{
+        max-width: 100%;
+        padding: 1rem;
+        margin: 1rem;
+        display: flex;
+      
+        >button{
+            padding: 1.2rem;
+            width:fit-content;
+            border-radius: 10px;
+            border: none;
+            font-size: 1.5rem;
+            background-color: $red;
+            color: white;
+            margin-bottom: 2rem;
+
+            &:hover{
+                background-color: $dark;
+                color: $red;
+            }
+
+        }
+    }
+
+    >div{
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        
+    }
+}
+
+.menucard{
+    margin-top: 2rem;
+    width: 30%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.68);
+
+    >div{
+      
+        border-radius: 20px 20px 0 0;
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        background-color: $red;
+        color: white ;
+    }
+
+    >main{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >img{
+            height: 13rem;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        >h5{
+            font-size: 1.5rem;
+        }
+
+        >p{
+            letter-spacing: 2px;
+            padding: 1rem 0;
+        }
+
+        >button{
+            padding: 1rem 0;
+            background-color: $red;
+            color: white;
+            cursor: pointer;
+            border-radius: 20px;
+            border: none;
+            width: 100%;
+            &:hover{
+                background-color: $reddark;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+
+   #menu{
+
+    > div{
+        flex-direction: column;
+        
+    }
+
+    >.btn{
+        padding: 0.5rem;
+        margin: 0.5rem;
+
+        
+        >button{
+            margin: auto;
+            margin-top: 15px;
+            width:50%;
+            
+
+        }
+    }
+
+
+   } 
+   
+   
+
+   .menucard{
+        width: 100%;
+        padding: 2rem;
+        margin: 1rem 0;
+        background-color: white;
+   }
+}
