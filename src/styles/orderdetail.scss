@@ -1,6 +1,7 @@
 @import "color";
 
 
+
 .orderdetails{
     background-color: $pink;
     width: 100%;
@@ -45,6 +46,7 @@
                 font-size: 1.1rem;
                 letter-spacing: 3px;
                 margin: 0.5rem;
+                max-width: 100%;
                 
             }
         }
@@ -77,6 +79,17 @@
 
         >main{
             width: 100%;
+            padding:0rem;
+
+            >div{
+
+                >p{
+                    overflow-x:auto;
+                }
+                p::-webkit-scrollbar{
+                    display: none;
+                  }
+            }
         }
     }
     
