@@ -163,15 +163,15 @@
     #about{
 
         >.top{
-            min-height: 25vh;
+            min-height: 30vh;
             text-align: center;
            
     
             >h2{
                 display: flex;
                 margin: auto;
-                margin-top: 2rem;
-                margin-bottom: 2rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
                 padding: 1rem;
                 border-bottom: 3px solid $red ;
                 width: fit-content;
