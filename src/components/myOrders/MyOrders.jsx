@@ -22,7 +22,7 @@ const MyOrders = () => {
         }
 
         dispatch(getMyOrders())
-       
+        
       
     }, [dispatch,error])
 
@@ -40,13 +40,25 @@ const MyOrders = () => {
     }
    
 
+   
+
   return (
     <section className='tableclass'>
         
         {
             loading===true?<Loader/>:
             <main>
-            <table>
+            {
+                orders.length===0?(
+                    <h3 style={{
+                        fontSize:"1.5rem",
+                        color:"rgb(156,0,60)",
+                        display:"flex",
+                        justifyContent:"center",
+                        alignItems:"center"
+                    }}>"You Haven't Add anything Yet!!"</h3>)
+                :
+                <table>
                 <thead>
                     <tr>
                         <th>Order Id</th>
@@ -72,6 +84,7 @@ const MyOrders = () => {
                     }
                 </tbody>
             </table>
+            }
         </main>
         }
 
