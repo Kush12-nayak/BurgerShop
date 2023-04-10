@@ -104,6 +104,7 @@ const Shipping = () => {
             <select id='country'
              value={country} 
              onChange={(e)=> setcountry(e.target.value)}
+             required
             >
             <option value="">Country</option>
              {
@@ -119,7 +120,7 @@ const Shipping = () => {
             <label htmlFor="">State</label>
         
            <select
-              value={state} onChange={(e)=> setstate(e.target.value)}
+              value={state} onChange={(e)=> setstate(e.target.value)} required
              >
                <option value="">State</option>
                {
