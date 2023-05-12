@@ -61,7 +61,7 @@ const OrderDetails = () => {
                 </p>
                 <p>
                     <b>Delivered At:</b>
-                    {order.deliveredAt ? order.deliveredAt.split("T")[0]:"Out for delivery"}
+                    {order.deliveredAt ? order.deliveredAt.split("T")[0]:""}
                 </p>
             </div>
             <div>
